@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+
+}
+body{
+    background-color: #4f86f7;
+}
+ 
+.container{
+    height: 100vh;
+    width: 100vw;
+   
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.card{
+    height: 450px;
+    width: 700px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.card .fruit{
+    padding-top: 20px;
+    position: absolute;
+    left: -30px;
+    top: 50px;
+    height: 350px;
+    width:300px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #201e3b;
+  
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+transition: all 0.3s ease-in-out;
+}
+.fruit img{
+    position: absolute;
+    left: -80px;
+    top: 20px;
+    width: 350px;
+     filter: drop-shadow(-13px 5px 13px #323232);
+     transition: all 0.3s ease-in-out;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
+
+
+
+.icon1,
+.icon2{
+    position:absolute;
+    top:1rem;
+    width:42px;
+    height:42px;
+    border-radius:999px;
+    background:rgba(255,255,255,0.18);
+    color:#fff;
+    line-height:42px;
+    text-align:center;
+    cursor:pointer;
+    transition:background 200ms ease;
+}
+.icon1{left:1rem;}
+.icon2{right:1rem;}
+
+.icon1:hover,
+.icon2:hover{
+    background:rgba(255,255,255,0.32);
+}
+.gallery{
+    width:500px;
+    height: 49px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.3s ease;
+    border-radius: 0 0 15px 15px;
+    
+}
+
+.gallery .small{
+    width: 37px;
+    position: absolute;
+    left: 20px;
+    top: 7px;
+    margin: 2px;
+    
+filter: none;
+
+    border: 1px solid #a09998;
+}
+.gallery .b2{
+    left: 80px;
+}
+
+.gallery .b3{
+    width: 40px;
+    left: 140px;
+}
+
+.gallery .b4{
+   left: 200px;
+}
+.details{
+    position: absolute;
+    right: 50px;
+    top: 35px;
+    transition: all 0.3s ease-in-out;
+   
+}
+.details2 h4{
+    line-height: 5px;
+    color: #a09998;
+    font-weight: lighter;
+}
+
+.details h2{
+   color: #323232;
+   font-family: "DM Sans", sans-serif;
+}
+.details2 h1,span{
+    display: inline-block;
+    line-height: 100px;
+    color: red;
+}
+.details2 p{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+button ,a {
+    text-decoration: none;
+    display:inline-block;
+    background:#ff5a4f;
+    color:#fff;
+    border:none;
+    border-radius:999px;
+    padding: 13px 24px;
+    font-size:1rem;
+    text-transform:uppercase;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:rgba(255, 90, 79, 0.35) 0px 15px 35px;
+    transition:transform 200ms ease,box-shadow 200ms ease;
+    margin-top:0.5rem;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:rgba(255, 90, 79, 0.5) 0px 22px 45px;
+}
+a:hover{
+    transform:translateY(-2px);
+    box-shadow:rgba(255, 90, 79, 0.5) 0px 22px 45px;
+}
+
+@media (max-width: 700px) {
+    .fruit img{
+       width: 300px;
+       left: -30px;
+    }
+}
+@media (max-width: 600px) {
+    .card .fruit{
+        height: 300px;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .fruit img{
+      width: 340px;
+      left: 50px;
+    }
+    .card{
+        height: 730px;
+        
+        width: 90%;
+        padding-bottom: 20px;
+        margin: 5px;
+    }
+    .gallery{
+        width: 100%;
+
+    }
+    .details{
+       
+       left: 0;
+       top: 310px;
+    }
+    .details2 {
+        padding-left: 50px;
+    }
+}
+@media (max-width: 400px) {
+    .fruit img{
+       
+       left: -20px;
+    }
+    .card{
+        height: 750px;
+    }
+}
+@media (max-width: 350px) {
+    .fruit img{
+       
+       width: 280px;
+       left: -10px;
+    }
+}
+
+
+
+
