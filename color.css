@@ -19,7 +19,7 @@ body {
 
 .palette-wrap {
 
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -95,11 +95,18 @@ body {
     transition: transform 0.3s;
     z-index: 1;
 }
-
+/* 
 @media (max-width: 700px) {
-   body {
-       overflow-y: hidden;
+    .palette-wrap{
+      padding-left: 0;
 }
+.palette-wrap .palette-block .dot{
+      width: 50px;
+      background-color: #040404;
+      transition: all 0.3s ease-in-out;
 }
+
+  
+} */
 
 
