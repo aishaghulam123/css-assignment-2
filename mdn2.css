@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /* body{
     overflow-x: hidden
@@ -163,6 +164,12 @@ nav select:hover {
 
 }
 
+
+
+
+
+
+
 /* left bar */
 
 .Left {
@@ -189,29 +196,15 @@ nav select:hover {
     border-bottom: none;
 
 }
-
-.Left .element:hover,
-.element2:hover,
-.element3:hover {
-    height: 500px;
-}
-
-.Left .element .ele-a,
-.element2 .ele-a,
-.element3 .ele-a {
-    height: 0;
-    opacity: 0;
-    /* height: 450px; */
-}
-
-.Left .element:hover .ele-a,
-.element2:hover .ele-a,
-.element3:hover .ele-a {
-    height: 450px;
-    opacity: 1;
+.Left details{
+  margin-left: -10px;
+   border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    
 }
 
 .Left a {
+
     display: block;
     color: #000;
     text-decoration: none;

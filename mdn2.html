@@ -32,7 +32,6 @@
             <!-- <div class="fixed "> -->
             <div class="logo"><img src="./mdn/mdnLogo.png" alt=""></div>
             <div class="tabs ">
-
                 <label>HTML </i><select name="html" id="html">
                         <option value=""></option>
                         <option value="element" disabled>HTML ELEMENT</option>
@@ -103,10 +102,11 @@
             <!-- left -->
             <div class="child Left">
                 <h2>Reference</h2>
-                <div class="element">
-                    <h3><i class="fa-solid fa-angle-down"></i>Element</h3>
-                    <div class="ele-a">
-                        <a href="#a">&lt; a &gt;</a>
+                <details>
+          <summary>
+            <h3><i class="fa-solid fa-angle-down"></i>Elements</h3>
+          </summary>
+          <a href="#a">&lt; a &gt;</a>
                         <a href="#abbr">&lt; abbr &gt;</a>
                         <!-- <a href="">&lt; address &gt;</a> -->
                         <a href="#area">&lt; area &gt;</a>
@@ -134,15 +134,14 @@
                         <!-- <a href="">&lt; dl &gt;</a> -->
                         <!-- <a href="">&lt; dt &gt;</a> -->
                         <a href="#em">&lt; em &gt;</a>
-                    </div>
-                </div>
 
+        </details>
 
+                
 
-
-                <div class="element2">
-                    <h3><i class="fa-solid fa-angle-down"></i>Attributes</h3>
-                    <div class="ele-a">
+                <details>
+                   <summary> <h3><i class="fa-solid fa-angle-down"></i>Attributes</h3></summary>
+                    
                         <a href=""> accept </a>
                         <a href=""> autocomplete </a>
                         <a href=""> capture </a>
@@ -165,15 +164,17 @@
                         <a href=""> min </a>
 
                         <a href=""> minLength </a>
-                    </div>
-                </div>
+                        
+                        </details>
+                   
 
 
 
 
-                <div class="element3">
-                    <h3><i class="fa-solid fa-angle-down"></i>Global attributes</h3>
-                    <div class="ele-a">
+                <details>
+                    <summary>
+                    <h3><i class="fa-solid fa-angle-down"></i>Global attributes</h3></summary>
+                    
                         <a href=""> accesskey </a>
                         <a href=""> anchor
                         </a>
@@ -195,9 +196,8 @@
                         <a href=""> is </a>
 
                         <a href=""> lang </a>
-                    </div>
-                </div>
-
+                        </details>
+                    
 
 
 
